@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+        <style>
+            .advncd_srch_logo{
+                color: red;
+                text-decoration: none;
+                font-weight: bold;
+                margin-left: 45px;
+                margin-top: 15px;
+            }
+
+            label{
+                font-weight: normal;
+                margin-left: 30px;
+                margin-top: 20px;
+                
+
+            }
+            ul {
+                list-style-type: none;
+                margin-left: 1100px;
+                padding: 0;
+                font-weight: bold;
+            }
+
+           li {
+               display: inline;
+            }
+            .nvgt{
+               background-color:#D3D3D3;
+               width: 100%;
+               height: 30px;
+            }
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+            }
+            a :hover{
+               
+                background-color: black;
+            }
+            
+         </style>
+         </head>
+
+    <body>
+        <div class="nvgt">
+            <ul>
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="image.html">Images</a></li>
+            </ul>
+        </div>
+
+
+
+        <div> 
+       <p class="advncd_srch_logo"> Advanced Search </p> 
+       
+       <hr style="height:1px;border-width:0;color:gray;background-color:gray"> 
+       </div>     
+       <p style="margin-left: 40px; font-weight: normal;">Find pages with...</p>   
+
+        <form action="https://google.com/search" name="f">
+            <table style="width:100%">
+           
+            <tr>
+            
+                <th>  <label for="field1">all these words:</label> </th>
+                <th>  <input type="text" class="textinput" id="field1" value=""  name="as_q" style="width: 500px;"> </th>
+                <th> <p style="font-weight: normal;">Type the important words:  tricolor rat terrier </p> </th>
+            </tr>
+            
+            <tr>
+                <th> <label for="field2">this exact word or phrase: </label></th>
+                <th> <input type="text" class="textinput" id="field2" value=""  name="as_epq" style="width: 500px;"></th>
+                <th><p style="font-weight: normal;">Put exact words in quotes:  "rat terrier" </p></th>
+           
+            </tr>
+            <tr>
+                <th> <label for="field3">any of this words: </label> </th>
+                <th> <input type="text" class="textinput" id="field3" value=""  name="as_oq" style="width: 500px;"></th>
+                <th><p style="font-weight: normal;">Type OR between all the words you want:  miniature OR standard </p></th>
+            </tr>
+            
+            <tr>
+                <th> <label for="field4">none of these words: </label></th>
+                <th> <input type="text" class="textinput" id="field4" value=""  name="as_eq" style="width: 500px;" ></th>
+                <th><p style="font-weight: normal;">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"
+                </p></th>
+            </tr>
+            
+           </table> 
+            
+                              <input type="submit" value="advanced search" class="btn btn-primary" style="margin-left: 75%; margin-top: 5%;" >
+                  
+                            </form>
+
+ </body>
+</html>
